@@ -1,0 +1,94 @@
+Google Sheets Clone
+A web-based spreadsheet application inspired by Google Sheets, built using React, Handsontable, Node.js, Express, and MongoDB. This project allows users to create, edit, and save spreadsheets with support for formulas.
+
+🚀 Features
+✅ Handsontable-based spreadsheet UI
+✅ Save and load spreadsheets to/from MongoDB
+✅ Supports basic formulas like SUM, AVERAGE, MAX, MIN, COUNT, etc.
+✅ Text transformation functions: TRIM, UPPER, LOWER, FIND_AND_REPLACE
+✅ Remove duplicate values in a range
+✅ Dynamic cell calculations
+
+🛠️ Tech Stack
+Frontend: React.js, Handsontable, Axios
+Backend: Node.js, Express.js, MongoDB, Mongoose
+Styling: CSS
+Deployment: (Optional) AWS, Vercel, or Netlify
+📌 Installation & Setup
+1️⃣ Clone the Repository
+sh
+Copy
+Edit
+git clone https://github.com/sroy3333/google-sheets-clone.git
+cd google-sheets-clone
+2️⃣ Install Dependencies
+🔹 Backend (Server)
+sh
+Copy
+Edit
+cd server
+npm install
+🔹 Frontend (React App)
+sh
+Copy
+Edit
+cd google-sheets-clone
+npm install
+⚙️ Running the Project
+▶️ Start Backend Server
+Create a .env file in the server/ directory and add:
+ini
+Copy
+Edit
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+Run the server:
+sh
+Copy
+Edit
+npm start
+▶️ Start Frontend (React App)
+sh
+Copy
+Edit
+npm start
+This will start the React app at http://localhost:3000.
+
+📚 API Endpoints
+Method	Endpoint	Description
+POST	/save	Save a spreadsheet
+GET	/load/:name	Load a spreadsheet by name
+📝 Usage
+1️⃣ Open the React app and start editing the spreadsheet.
+2️⃣ Use formulas like:
+
+=SUM(A1:A5)
+=AVERAGE(B1:B10)
+=MAX(C1:C10)
+=COUNT(D1:D5)
+=UPPER(A1)
+=LOWER(A1)
+=FIND_AND_REPLACE(A1, "old", "new")
+=REMOVE_DUPLICATES(A1:A10)
+3️⃣ Click the Save button to store your sheet in MongoDB.
+4️⃣ Reload the page and retrieve your saved sheet.
+🎯 Future Enhancements
+🔹 Multi-user collaboration
+🔹 Real-time updates with WebSockets
+🔹 Export & Import to CSV/Excel
+🔹 Advanced formula support
+
+🏆 Credits
+Handsontable for spreadsheet UI
+Math.js for formula calculations
+MongoDB for data storage
+📜 License
+This project is licensed under the MIT License.
+
+
+
+
+
+
+
+
