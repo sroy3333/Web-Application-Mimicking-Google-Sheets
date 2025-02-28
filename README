@@ -82,8 +82,6 @@ GET	/load/:name	Load a spreadsheet by name
 Handsontable for spreadsheet UI
 Math.js for formula calculations
 MongoDB for data storage
-📜 License
-This project is licensed under the MIT License.
 
 
 
